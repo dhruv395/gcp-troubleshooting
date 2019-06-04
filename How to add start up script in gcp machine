@@ -1,5 +1,10 @@
 If you enable firewall in ubuntu machine and don't allow port 22, you won't be able to ssh that machine later.
 
+error message:
+Connection Failed
+We are unable to connect to the VM on port 22. Learn more about possible causes of this issue.
+RetryClose
+
 To be able to ssh the machine, follow these steps:
 - stop the machine
 - click on the edit 
