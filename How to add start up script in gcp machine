@@ -1,0 +1,13 @@
+If you enable firewall in ubuntu machine and don't allow port 22, you won't be able to ssh that machine later.
+
+To be able to ssh the machine, follow these steps:
+- stop the machine
+- click on the edit 
+- go to, Custom metadata
+-  click add item
+-     add key,              value pair as,
+    startup-script        #! /bin/bash
+                          ufw allow 22
+                     
+- save and start the instance.
+- you should be able to ssh now.
